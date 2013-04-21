@@ -5,7 +5,7 @@
 (function ($) {
 
     $(function () {
-        $('form').on('submit', function (e) {
+        $('body').on('submit', 'form', function (e) {
             e.preventDefault();
             var form = $(e.currentTarget).get(0);
 
