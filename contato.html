@@ -353,57 +353,51 @@
 								<div class="span6">
 									<p>Use este formulário para nos enviar uma mensagem:</p>
 									<div id="contact_form" class="rapid_contact ">
-	                                	<form action="http://www.sistemawinner.com.br/receptora/_apps/receptora/index.php" method="post" 
-	                                		class="form-horizontal" name="contato">
+                                        <form class='form-horizontal' name="cadastrar" id="formContato"
+                                            action="http://www.sistemawinner.com.br/receptora/_apps/maisinformacao/index.php" method="post">
 
-					                        <input name="cmd" type="hidden" value="relRobo" />
-					                        <input name="usr_nickname" type="hidden" value="ZGFuaWxvanJy" />
-					                        <input name="destinoURL" type="hidden" value="" />
+                                            <input name="cmd" type="hidden" value="cadastro" />
+                                            <input name="url" type="hidden" value="http://www.sistemawinner.com.br/danilojrr/hotsite" />
+                                            <input name="idUsuario" type="hidden" value="ZGFuaWxvanJy" />
 
-		                                	<div class="control-group">
-												<label class="control-label" for="usr_nome">Nome</label>
-												<div class="controls">
-													<input type="text" class="inputbox input-xlarge" name="usr_nome" id="usr_nome" size="35" 
-														required placeholder='Nome' /> 
-												</div>
-											</div><!-- end control group -->
+                                            <div class="control-group">
+                                                <label class="control-label" for="c_nome">Nome</label>
+                                                <div class="controls">
+                                                    <input type="text" class="inputbox input-xlarge" name="c_nome" id="c_nome" size='35' 
+                                                        placeholder='Nome' required />
+                                                </div>
+                                            </div><!-- end control group -->
 
-											<div class="control-group">
-												<label class="control-label" for="usr_email">Email</label>
-												<div class="controls">
-													<input type="email"  class="inputbox input-xlarge" name="usr_email" id="usr_email" size="50" required placeholder='Email' /> 
-												</div>
-											</div><!-- end control group -->
+                                            <div class="control-group">
+                                                <label class="control-label" for="c_email">Email</label>
+                                                <div class="controls">
+                                                    <input type="email" class="inputbox input-xlarge" name="c_email" id="c_email" placeholder='Email' required />
+                                                </div>
+                                            </div><!-- end control group -->
 
-											<div class="control-group">
-												<label class="control-label" for="usr_telefone">Telefone 1</label>
-												<div class="controls">
-													<input type="tel" class="inputbox input-xlarge" name="usr_telefone" id="usr_telefone" required placeholder='Telefone 1'/> 
-												</div>
-											</div><!-- end control group -->
+                                            <div class="control-group">
+                                                <label class="control-label" for="c_telefone">Telefone</label>
+                                                <div class="controls">
+                                                    <input type="tel" class="inputbox input-xlarge" name="c_telefone" id="c_telefone" size="11" maxlength="11" 
+                                                        placeholder='Telefone' required />
+                                                </div>
+                                            </div><!-- end control group -->
 
-											<div class="control-group">
-												<label class="control-label" for="usr_telefone_2">Telefone 2</label>
-												<div class="controls">
-													<input type="tel" class="inputbox input-xlarge" name="usr_telefone_2" id="usr_telefone_2" placeholder='Telefone 2'/> 
-												</div>
-											</div><!-- end control group -->
+                                            <div class="control-group">
+                                                <label class="control-label" for="c_msg">Mensagem</label>
+                                                <div class="controls">
+                                                    <textarea class="textarea span4" name="c_msg" id="c_msg" placeholder="Mensagem" required></textarea>
+                                                </div>
+                                            </div><!-- end control group -->
 
-											<div class="control-group">
-												<label class="control-label" for="c_msg">Mensagem</label>
-												<div class="controls">
-													<textarea class="textarea span4" placeholder="Mensagem" name="c_msg" id="c_msg" required></textarea>
-												</div>
-											</div><!-- end control group -->
+                                            <!--<p class="text_right">Todos os campos com um * devem ser preenchidos.</p>-->
 
-			                                <!--<p class="text_right">Todos os campos com um * devem ser preenchidos.</p>-->
-
-			                                <div class="control-group"> 
-												<div class="controls"> 
-													<input class="btn" type="submit" value="Enviar Mensagem" onclick="aviso()" /> 
-												</div> 
-											</div>
-			                            </form>
+                                            <div class="control-group"> 
+                                                <div class="controls"> 
+                                                    <input class="btn" type="submit" value="Enviar Mensagem" onclick="aviso()" /> 
+                                                </div> 
+                                            </div>
+                                        </form>
 
 									</div><!-- end contact form -->
 								</div><!-- end left side -->
@@ -536,32 +530,18 @@
                     <div class="span4">
                         <div class="newsletter-signup">
                             <h3 class="m_title">CONHEÇA O NEGÓCIO</h3>
-                            <p>Participe da nossa lista de email. Você sempre estará atualizado sobre eventos, treinamentos e novidades da rede.</p>
-                            <form class="validate" action="http://www.sistemawinner.com.br/receptora/_apps/receptora/index.php" 
-                                method="post" name="cadastrar">
-                            <!--<form action="http://telexfreegrupofortaleza.us6.list-manage.com/subscribe/post?u=0f149187263eab38b835bd21d&amp;id=84412d5de1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">-->
+                            <p>Encaminharemos informações e entraremos em contato com você.</p>
+                            
+                            <form action="http://www.sistemawinner.com.br/receptora/_apps/receptora/index.php" method="post" id='formBottom' name="cadastrar">
+                                <input name="cmd" type="hidden" value="relRobo" /> 
+                                <input name="usr_nickname" type="hidden" value="ZGFuaWxvanJy" /> 
+                                <input name="usr_origem" type="hidden" value="2" /> 
+                                <input name="url" type="hidden" value="<a href='http://www.sistemawinner.com.br/danilojrr'>http://www.sistemawinner.com.br/danilojrr</a>" />
 
-                                <input name="cmd" type="hidden" value="cadastro" />
-                                <input name="url" type="hidden" value="http://www.sistemawinner.com.br/danilojrr/hotsite" />
-                                <input name="idUsuario" type="hidden" value="ZGFuaWxvanJy" />
-
-                                <input type="text" name="c_nome" class="required" id="c_nome" placeholder="Nome" required />
-                                <input type="tel" name="c_telefone" id="c_telefone" placeholder="Telefone" required />
-                                <input type="email" name="c_email" class="required" id="c_email" placeholder="seu.endereco@email.com" required />
-                                <input type="submit" value="SABER MAIS" name="subscribe" id="mc-embedded-subscribe" class="button" />
-                                
-                                <!--
-                                <div id="mce-responses" class="clear">
-                                    <div class="response" id="mce-error-response" style="display:none"></div>
-                                    <div class="response" id="mce-success-response" style="display:none"></div>
-                                </div>
-                                -->
-
-                                <!--
-                                <div class="input_form">
-                                    <input type="submit" class="button" value="Enviar Email" onclick="validar()" />
-                                </div>
-                                -->
+                                <input type="text" class="input" id="usr_nome" name="usr_nome" size="35" placeholder='Nome' required />
+                                <input type="email" class="input" id="usr_email" name="usr_email" size="35" placeholder="Email" required />
+                                <input type="tel" class="input" id="usr_telefone" maxlength="11" name="usr_telefone" size="11" placeholder="Fone" required />
+                                <input type="submit" name="subscribe" value="SABER MAIS" class="button" onclick='aviso()' />
                             </form>
                         </div><!-- end newsletter-signup -->
                     </div>
