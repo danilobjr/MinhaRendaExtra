@@ -12554,9 +12554,10 @@ body.boxed #page_wrapper {
 
 #logo img {
 	position: absolute;
-	width: 67px;
-	top: 14px;
-	left: 148px;
+	width: 210px;
+	height: 87px;
+	top: 2px;
+	left: 18px;
 }
 
 /* CONTATO - FORM */
